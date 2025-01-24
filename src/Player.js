@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 // default value of name ,team,age,img,nationality,jers
 const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/salah.jpg",nationality="Egyptian",jers=11})=>{
     return (
-   <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}> 
+   <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding:20 }}> 
      <Card style={{ width: '18rem', boxShadow:"0 4px 8px 0 rgba(0,0,0,0.2)"  ,transition: "0.3s" ,borderRadius: "10px"}}>
       <Card.Img variant="top" src={img} style={{width:"100%",height:200}} />
       <Card.Body>
