@@ -9,8 +9,9 @@ const imgStyle={width:"100%",height:200}
 const titlestyle={textAlign:'center',fontWeight:'bold', fontSize:'16px'};
 
 
+
 // default value of name ,team,age,img,nationality,jers
-const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/salah.jpg",nationality="Egyptian",jers=11})=>{
+const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/salah.jpg",nationality="Egyptian",jerseyNumber=11})=>{
     return (
    <div style={styleDiv}> 
      <Card style={cardStyle}>
@@ -29,7 +30,7 @@ const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/sal
            <h5>Team: </h5> <ListGroup.Item>{team}</ListGroup.Item>
         </div>
         <div style={styleItem}>
-           <h5>Jersey number: </h5><ListGroup.Item>{jers}</ListGroup.Item>
+           <h5>Jersey number: </h5><ListGroup.Item>{jerseyNumber}</ListGroup.Item>
         </div>
       </ListGroup>
     
