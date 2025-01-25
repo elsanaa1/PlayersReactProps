@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import PropTypes from 'prop-types';
 // style list item  
 const styleItem={ display: 'flex', alignItems: 'center' }
 const styleDiv={display: 'flex', justifyContent: 'center', alignItems: 'center', padding:20 }
@@ -13,11 +14,11 @@ const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/sal
      <Card style={cardStyle}>
       <Card.Img variant="top" src={img} alt="player image" style={{width:"100%",height:200}} />
       <Card.Body>
-         <Card.Title style={{textAlign:'center'}}>{name}</Card.Title>
+         <Card.Title style={{textAlign:'center',fontWeight:'bold', fontSize:'16px'}}> {name}</Card.Title>
       </Card.Body>
       <ListGroup className="list-group-flush">
       <div style={styleItem}>
-            <h5 >Age: </h5> <ListGroup.Item>{age}</ListGroup.Item>
+            <h5 >Age: </h5> <ListGroup.Item> {age}</ListGroup.Item>
       </div>
        <div style={styleItem}>
            <h5>Nationality: </h5><ListGroup.Item> {nationality}</ListGroup.Item>
