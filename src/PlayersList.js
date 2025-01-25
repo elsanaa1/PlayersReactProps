@@ -3,7 +3,7 @@ import Player from "./Player";
 const PlayerList=()=>{
        return (
        <div > 
-     {players.map( (e)=>{  
+        {players.map( (e)=>{  
           //  passing props as spread operator
           return( <Player {...e} />)}  )}
         </div>

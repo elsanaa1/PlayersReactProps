@@ -10,7 +10,7 @@ const titlestyle={textAlign:'center',fontWeight:'bold', fontSize:'16px'};
 
 
 
-// default value of name ,team,age,img,nationality,jers
+// default props values
 const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/salah.jpg",nationality="Egyptian",jerseyNumber=11})=>{
     return (
    <div style={styleDiv}> 
@@ -51,6 +51,7 @@ Player.propTypes = {
  };
 
  
+
 
 
 export default Player;
