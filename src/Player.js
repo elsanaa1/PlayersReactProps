@@ -45,7 +45,7 @@ Player.propTypes = {
    name: PropTypes.string,
    team: PropTypes.string,
    nationality: PropTypes.string,
-   jers: PropTypes.number,
+   jerseyNumber: PropTypes.number,
    age: PropTypes.number,
    img: PropTypes.string
  };
