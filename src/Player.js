@@ -11,7 +11,7 @@ const titlestyle={textAlign:'center',fontWeight:'bold', fontSize:'16px'};
 
 
 // default props values
-const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/salah.jpg",nationality="Egyptian",jerseyNumber=11})=>{
+const Player=({name,team,age,img,nationality,jerseyNumber})=>{
     return (
    <div style={styleDiv}> 
      <Card style={cardStyle}>
@@ -40,6 +40,8 @@ const Player=({name="Mohamed Salah",team="Liverpool",age=32,img="/playersimg/sal
 };
 
 
+
+
 // Prop Types
 Player.propTypes = {
    name: PropTypes.string,
@@ -50,7 +52,14 @@ Player.propTypes = {
    img: PropTypes.string
  };
 
- 
+ // edfault propos 
+ Player.defaultProps={
+   name:"Liverpool",
+   age:32,
+   img:"/playersimg/salah.jpg",
+   nationality:"Egyptian",
+   jerseyNumber:11
+ }
 
 
 
